@@ -26,6 +26,12 @@ app.get(('/contact'), (req, res, next) => {
 })
 
 
+app.get(('/login'), (req, res, next) => {
+    res.render('login.ejs');
+})
+
+
+
 app.listen(port , () => {
     console.log(`Server run on ${port}`)
 } )
